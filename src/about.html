@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Re-Cycle | About</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <script>
+      function toggleNav(x) {
+        var menu = document.getElementById(x),
+          maxH = '100vh';
+        if (menu.style.height == maxH) {
+          menu.style.height = '0vh';
+        } else {
+          menu.style.height = maxH;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="about-grid">
+      <div id="dropdown">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <header id="main-header">
+        <nav id="main-nav">
+          <button onclick="toggleNav('dropdown')">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+        <p>
+          <em
+            >Appriciate your surroundings <br />
+            and let them appreciate you.</em
+          >
+        </p>
+      </header>
+
+      <div class="about-wrapper">
+        <section class="about-section about1">
+          <h1 id="main-heading">About Us</h1>
+
+          <p>
+            We're a team consisting of 11 passionate cyclists. 9 years ago we
+            were going on a trip to one of our favorite places to visit by bike.
+            When we arrived, what met us was hundreds of tourist and piles of
+            trash.
+          </p>
+
+          <br />
+
+          <p>
+            It ruined the experience for us, and we came to think about the
+            tourists aswell. They all came here because they have seen pictures
+            and videos of this beautiful place. This did not look like the
+            picture.
+          </p>
+
+          <br />
+
+          <p>
+            So we came up with this idea, what if we could go on cycling trips
+            together, meet other amazing people and show them unbeliveable
+            places around Parksville, While picking up trash.
+          </p>
+        </section>
+
+        <div class="about-image">
+          <img
+            src="images/friends.jpeg"
+            alt="A picture of all eleven people behind Re-Cycle, jumping in front of the sunset."
+          />
+        </div>
+
+        <section class="about-section about2">
+          <p>
+            We spent some time trying to gather equipment, which was expensive.
+            One day we got approached by the leaders of the organisation Green
+            Canada. They desided to fund us 100% with some of the donations the
+            organisation recieved.
+          </p>
+
+          <br />
+
+          <p>
+            We were over the moon with happiness. We could now bring a bunch of
+            people with us on these amazing trips and at the same time, save a
+            little bit of nature on the way.
+          </p>
+
+          <br />
+
+          <p>
+            We change our routes every 6 months, to make sure that we pick up
+            trash from different places while still visiting the awesome
+            locations.
+          </p>
+        </section>
+
+        <div class="about-image2">
+          <img
+            src="images/friends2.jpeg"
+            alt="A picture of one of our guides talking to a teenager on a tour."
+          />
+        </div>
+      </div>
+
+      <div id="cta-wrapper">
+        <a href="#">
+          <div id="sign-up">
+            <i class="far fa-newspaper"></i>
+            <h3><em>Sign Up</em></h3>
+            <br />
+            <br />
+            <p>
+              <em
+                >Sign up for our newsletter to recieve info about our ongoing
+                contests and giveaways</em
+              >
+            </p>
+          </div>
+        </a>
+
+        <a href="#">
+          <div id="call-us">
+            <i class="fas fa-phone"></i>
+            <h3><em>Call Us</em></h3>
+            <p><em>Please call us if you have any questions</em></p>
+            <p><em>Phone: +4736564154713</em></p>
+          </div>
+        </a>
+      </div>
+
+      <footer id="main-footer">
+        <a href="#">To Top</a>
+        <p>
+          Email: Contact@re-cycle.com<br />
+          Phone: +4736564154713
+        </p>
+        <p>&copy;Copyright 2018</p>
+      </footer>
+    </div>
+  </body>
+</html>

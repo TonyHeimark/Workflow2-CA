@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Re-Cycle | Home</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <script>
+      function toggleNav(x) {
+        var menu = document.getElementById(x),
+          maxH = '100vh';
+        if (menu.style.height == maxH) {
+          menu.style.height = '0vh';
+        } else {
+          menu.style.height = maxH;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="main-grid">
+      <div id="dropdown">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <header id="main-header">
+        <nav id="main-nav">
+          <button onclick="toggleNav('dropdown')">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+        <p>
+          <em
+            >Appriciate your surroundings <br />
+            and let them appreciate you.</em
+          >
+        </p>
+      </header>
+
+      <section class="sectionhome section1">
+        <h1 id="main-heading">
+          <strong>Parksville</strong><br />Free Guided Cycling Tours
+        </h1>
+        <p>
+          Re-Cycle is all about showing the beautiful nature of Parksville to
+          tourists and anyone that would like to explore it. While at the same
+          time keeping it free from trash and plastic.
+        </p>
+        <br />
+        <p>
+          We offer free guided tours and we provide all the equipment you need.
+          What do we want in return? It's simple, all we want is for you to help
+          us pick up trash and plastic on the way.
+        </p>
+        <a href="#" class="cta-btn">Book Now</a>
+      </section>
+
+      <div class="picture1home pic"></div>
+
+      <section class="section-exception section2">
+        <h2>Discover new <br />things and places</h2>
+        <p>
+          Our tours explore parks, mountains, the town itself and the coastline.
+          Depending on your choice of route. You will explore lots of landmarks
+          and wildlife. Get new memories and experiences!
+        </p>
+        <i class="fas fa-mountain icon1"></i>
+        <i class="fas fa-paw icon2"></i>
+        <i class="fas fa-city icon3"></i>
+        <i class="fas fa-tree icon4"></i>
+      </section>
+
+      <div class="picture2home pic"></div>
+
+      <section class="sectionhome section3">
+        <h2>
+          We take care of<br />
+          our environment
+        </h2>
+        <p>
+          Sadly there's a lot of trash out there and it's ruining our nature and
+          potentially hurting animals. This is our solution as cyclists, we get
+          to show people our beautiful town, do good deeds and do what we love
+          at the same time!
+        </p>
+        <br />
+        <p>
+          Last year we picked up 1780 lbs of trash. Join us and everyone else to
+          beat that record.
+        </p>
+        <a href="#" class="cta-btn">Join Us</a>
+      </section>
+
+      <div class="picture3home pic">
+        <p>
+          <em
+            >Appreciate your surroundings <br />
+            and let them appreciate you</em
+          >
+        </p>
+      </div>
+
+      <section class="sectionhome section4">
+        <h2>Choose Between <br />Amazing Routes</h2>
+        <p>
+          We have some amazing routes with experienced guides. You can choose to
+          go for a quick and easy town route, or take one of our longer routes
+          which includes beautiful nature and wildlife. Give us a call for
+          reccomendations on which route will suite you the best.
+        </p>
+        <br />
+        <p>
+          Parksville has some incredible untouched nature and really diverse
+          wildlife. We hope to give you memories for life.
+        </p>
+        <a href="#" class="cta-btn">See More</a>
+      </section>
+
+      <div class="picture4home pic"></div>
+
+      <section class="testimonials">
+        <h2 class="testimonials-heading">Testimonials</h2>
+        <i class="fas fa-user user1"></i>
+        <br />
+        <i class="fas fa-user user2"></i>
+        <br />
+        <i class="fas fa-user user3"></i>
+        <br />
+        <i class="fas fa-user user4"></i>
+        <div class="testimonial-text">
+          <img src="images/testmonials.jpg" alt="Testimonials" />
+        </div>
+      </section>
+
+      <div id="cta-wrapper">
+        <a href="#">
+          <div id="sign-up">
+            <i class="far fa-newspaper"></i>
+            <h3><em>Sign Up</em></h3>
+            <br />
+            <br />
+            <p>
+              <em
+                >Sign up for our newsletter to recieve info about our ongoing
+                contests and giveaways</em
+              >
+            </p>
+          </div>
+        </a>
+
+        <a href="#">
+          <div id="call-us">
+            <i class="fas fa-phone"></i>
+            <h3><em>Call Us</em></h3>
+            <p><em>Please call us if you have any questions</em></p>
+            <p><em>Phone: +4736564154713</em></p>
+          </div>
+        </a>
+      </div>
+
+      <footer id="main-footer">
+        <a href="#">To Top</a>
+        <p>
+          Email: Contact@re-cycle.com<br />
+          Phone: +4736564154713
+        </p>
+        <p>&copy;Copyright 2018</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Re-Cycle | Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <script>
+      function toggleNav(x) {
+        var menu = document.getElementById(x),
+          maxH = '100vh';
+        if (menu.style.height == maxH) {
+          menu.style.height = '0vh';
+        } else {
+          menu.style.height = maxH;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="contact-grid">
+      <div id="dropdown">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <header id="main-header">
+        <nav id="main-nav">
+          <button onclick="toggleNav('dropdown')">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+        <p>
+          <em
+            >Appriciate your surroundings <br />
+            and let them appreciate you.</em
+          >
+        </p>
+      </header>
+
+      <div class="contact-wrapper">
+        <section class="contact-us">
+          <h1 id="main-heading">Contact Us</h1>
+          <a href="mailto:contact@re-cycle.com" class="mail-btn cta-btn"
+            >Mail Us</a
+          >
+          <h2>Or Call</h2>
+          <p>+4736564154713</p>
+        </section>
+
+        <section class="located">
+          <h2>We're Located here:</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1300.3488108843362!2d-124.3131424416728!3d49.32000979483384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5488855f4124a755%3A0xfc86a2cb17898a9b!2s114+Middleton+Ave%2C+Parksville%2C+BC+V9P+2L5%2C+Canada!5e0!3m2!1sno!2sno!4v1541196909260"
+            width="600"
+            height="450"
+            frameborder="1"
+            style="border:1"
+            allowfullscreen
+          ></iframe>
+          <p>114 Middleton Ave, Parksville, BC V9P 2L5, Canada</p>
+        </section>
+
+        <section class="follow-us">
+          <h2>Follow Us:</h2>
+          <a href="#"
+            ><img
+              src="images/facebookcircle.png"
+              alt="facebook icon with link to their facebook page"
+          /></a>
+          <a href="#"
+            ><img
+              src="images/instagramicon2.png"
+              alt="facebook icon with link to their facebook page"
+          /></a>
+        </section>
+      </div>
+
+      <div id="cta-wrapper">
+        <a href="#">
+          <div id="sign-up">
+            <i class="far fa-newspaper"></i>
+            <h3><em>Sign Up</em></h3>
+            <br />
+            <br />
+            <p>
+              <em
+                >Sign up for our newsletter to recieve info about our ongoing
+                contests and giveaways</em
+              >
+            </p>
+          </div>
+        </a>
+
+        <a href="#">
+          <div id="call-us">
+            <i class="fas fa-phone"></i>
+            <h3><em>Call Us</em></h3>
+            <p><em>Please call us if you have any questions</em></p>
+            <p><em>Phone: +4736564154713</em></p>
+          </div>
+        </a>
+      </div>
+
+      <footer id="main-footer">
+        <a href="#">To Top</a>
+        <p>
+          Email: Contact@re-cycle.com<br />
+          Phone: +4736564154713
+        </p>
+        <p>&copy;Copyright 2018</p>
+      </footer>
+    </div>
+  </body>
+</html>

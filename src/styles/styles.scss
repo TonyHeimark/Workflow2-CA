@@ -1,0 +1,971 @@
+/*--------------Global Styles-------------*/
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  padding: 60px 0 40px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  margin: 0 auto;
+  width: 80%;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/*--------------Shared ID's----------*/
+/*---Navigation----*/
+#main-nav {
+  background-color: #0a0a0a;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  position: fixed;
+  text-align: right;
+  z-index: 9;
+  top: 0;
+}
+
+#main-nav button {
+  font-size: 2.3em;
+  color: #ffa630;
+  background-color: #0a0a0a;
+  border: none;
+  cursor: pointer;
+  padding: 0 2%;
+}
+
+#dropdown {
+  height: 0vh;
+  width: 100%;
+  background-color: #0a0a0a;
+  float: left;
+  opacity: 0.95;
+  z-index: 8;
+  position: fixed;
+  border: none;
+  transition: height 0.35s linear 0s;
+  overflow: hidden;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+#dropdown ul {
+  position: absolute;
+  top: 20%;
+  padding: 0;
+  width: 100%;
+}
+
+#dropdown ul li {
+  list-style: none;
+  padding: 5% 0;
+  margin: 0 auto;
+  width: 50%;
+  display: block;
+}
+
+#dropdown ul li a {
+  padding: 0;
+  display: block;
+  position: relative;
+  background-color: #ffa630;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #ffa630;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#dropdown ul li a:hover {
+  background-color: #0a0a0a;
+  color: white;
+  border: 1px solid #ffa630;
+  transition: 0.25s;
+}
+
+#dropdown ul li a:active {
+  transform: scale(1.2);
+  transition: 0.25s;
+}
+
+/*---main Header----*/
+
+#main-header {
+  background-image: url(../images/headerpic.jpg);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+#main-header p {
+  color: #ffa630;
+  display: inline-block;
+  width: 60%;
+  position: absolute;
+  top: 240px;
+  left: 40%;
+  font-family: 'Courgette', cursive;
+}
+
+/*------Sign up and call us sign----*/
+
+#sign-up {
+  background-color: #adfcf9;
+  width: 100%;
+  height: 200px;
+  margin-top: 10%;
+}
+
+#sign-up .far {
+  font-size: 5em;
+  padding: 20px 0 0 2%;
+}
+
+#sign-up p {
+  padding: 0 0 0 20%;
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+  font-weight: 500;
+}
+
+#sign-up h3 {
+  font-size: 2em;
+  display: inline-block;
+  padding: 0 0 0 7%;
+  font-family: 'Courgette', cursive;
+}
+
+#call-us {
+  background-color: #ffa630;
+  width: 100%;
+  height: 200px;
+}
+
+#call-us .fas {
+  font-size: 5em;
+  padding: 20px 0 0 2%;
+}
+
+#call-us p {
+  padding: 0 0 10px 20%;
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+  font-weight: 500;
+}
+
+#call-us h3 {
+  font-size: 2em;
+  display: inline-block;
+  padding: 0 0 10px 12%;
+  font-family: 'Courgette', cursive;
+}
+
+/*-------footer-----*/
+
+#main-footer {
+  background-color: #0a0a0a;
+  color: white;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+#main-footer a {
+  color: white;
+  font-size: 2em;
+  margin: 50px auto;
+  display: inline-block;
+}
+
+#main-footer p {
+  margin-top: 40px;
+}
+
+/*-----------Backup image load--------*/
+#main-header {
+  background-image: url(../images/headerpic.jpg);
+}
+
+/*-----------------------------------------Home Page--------------*/
+/*---------Grid wrapper----------*/
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/*---------Call to action buttons----------*/
+.cta-btn {
+  padding: 10px 0;
+  width: 40%;
+  background-color: #3bb273;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 10px;
+  margin: 60px 30% 20px;
+  position: absolute;
+  text-align: center;
+  box-shadow: 2px 5px 5px black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cta-btn:hover {
+  background-color: #ffa630;
+  color: black;
+  transition: 0.35s;
+}
+
+.cta-btn:active {
+  box-shadow: 1px 2px 2px black;
+  transition: none;
+}
+
+/*---------Info Sections----------*/
+
+.sectionhome {
+  text-align: justify;
+  width: 100%;
+  height: 550px;
+  background-color: #f9f6ef;
+}
+
+.sectionhome h1 {
+  font-size: 1.4em;
+  margin: 10px 0 0;
+}
+
+.section-exception {
+  display: grid;
+  grid-template-areas:
+    'heading heading heading heading'
+    'text text text text'
+    'icon1 icon2 icon3 icon4';
+  text-align: justify;
+  width: 100%;
+  height: 450px;
+  background-color: #f9f6ef;
+}
+
+.section-exception .fas {
+  font-size: 3em;
+  width: 100%;
+  text-align: center;
+}
+
+.section-exception h2 {
+  grid-area: heading;
+  margin: 0;
+  padding: 60px 0 0;
+}
+
+.section-exception p {
+  grid-area: text;
+}
+
+.icon1 {
+  grid-area: icon1;
+}
+
+.icon2 {
+  grid-area: icon2;
+}
+
+.icon3 {
+  grid-area: icon3;
+}
+
+.icon4 {
+  grid-area: icon4;
+}
+
+/* filler images */
+/*-------------------------------------------------------------------------------*/
+
+.picture1home {
+  background-image: url(../images/cyclists.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+}
+
+.picture2home {
+  background-image: url(../images/sittingwoods.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+}
+
+.picture3home {
+  background-image: url(../images/nightcycling.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+}
+
+.picture3home p {
+  color: #ffa630;
+  position: relative;
+  top: 60px;
+  left: 20%;
+  width: 60%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+}
+
+.picture4home {
+  background-image: url(../images/plastic.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+}
+
+/*--------------------------------Testimonials-------------------------------*/
+
+.testimonials {
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'user1 text text text text'
+    'user2 text text text text'
+    'user3 text text text text'
+    'user4 text text text text';
+}
+
+.testimonials-heading {
+  grid-area: header;
+  margin-top: 5%;
+  font-size: 2em;
+}
+
+.user1,
+.user2,
+.user3,
+.user4 {
+  margin-left: 60%;
+}
+
+.user1 {
+  grid-area: user1;
+  font-size: 3em;
+  width: 100%;
+}
+
+.user2 {
+  grid-area: user2;
+  font-size: 3em;
+  width: 100%;
+}
+
+.user3 {
+  grid-area: user3;
+  font-size: 3em;
+  width: 100%;
+}
+
+.user4 {
+  grid-area: user4;
+  font-size: 3em;
+  width: 100%;
+}
+
+.testimonial-text {
+  grid-area: text;
+  width: 80%;
+}
+
+.testimonial-text img {
+  width: 100%;
+}
+
+/*--------------global end and end of home page-----------*/
+
+/*------------------------------------Tours Page-------------------*/
+
+.tour-grid {
+  background-color: #0a0a0a;
+}
+
+.route {
+  height: 900px;
+  border-top: 5px solid #ffa630;
+  border-bottom: 5px solid #ffa630;
+  border-radius: 10px;
+  width: 95%;
+  margin: 0 2.5% 50px;
+  background-color: #f9f6ef;
+  color: black;
+  text-align: justify;
+}
+
+.route h2 {
+  margin: 0;
+  padding: 40px 0 20px;
+}
+
+iframe {
+  height: 200px;
+  width: 90%;
+  margin: 0 5%;
+}
+
+.route1 {
+  margin-top: 50px;
+}
+
+.route-image img {
+  width: 90%;
+  height: 300px;
+  padding: 0;
+  margin: 0 5% 20px;
+}
+
+.route-image {
+  margin-top: 20px;
+}
+
+.route-text {
+  margin: 0;
+  padding: 0;
+}
+
+.cta-btn-tours {
+  margin: 30px 27.5% 0;
+}
+
+.toursinfo {
+  background-color: #f9f6ef;
+  height: 250px;
+  text-align: justify;
+}
+
+/*---------------End of Tours page only---------------*/
+
+/*-----------About Page------------*/
+
+.about-grid {
+  background-color: #0a0a0a;
+}
+
+.about-image img {
+  width: 90%;
+  height: auto;
+  margin: 50px 5%;
+  border-radius: 10px;
+}
+
+.about-image2 img {
+  width: 90%;
+  height: auto;
+  margin: 50px 5% 100px;
+  border-radius: 10px;
+}
+
+.about-section {
+  text-align: justify;
+}
+
+.about-wrapper {
+  background-color: #f9f6ef;
+}
+
+/*-----------------Contact us page-----------------*/
+.contact-grid {
+  background-color: #0a0a0a;
+}
+
+.mail-btn {
+  margin: 0;
+  position: relative;
+  padding: 10px 40px;
+}
+
+.contact-us {
+  height: 400px;
+  background-color: #f9f6ef;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-us h1 {
+  font-size: 2em;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+.contact-us p {
+  font-size: 1.5em;
+}
+
+.contact-us h2 {
+  padding-bottom: 30px;
+}
+
+.located {
+  color: white;
+  background-color: #0a0a0a;
+  text-align: center;
+}
+
+.located iframe {
+  border-top: 5px solid #ffa630;
+  border-bottom: 5px solid #ffa630;
+  border-radius: 10px;
+}
+
+.follow-us img {
+  width: 20%;
+  height: auto;
+  margin: 0 14.7% 10%;
+}
+
+.follow-us {
+  background-color: #0a0a0a;
+  color: white;
+}
+
+.follow-us a:hover {
+  opacity: 0.4;
+}
+
+/*---------------End of page styling------------*/
+/*-------------------------------------MEDIA QUERIES!!!---------*/
+/*--------Media Querie 768px for Contact page------*/
+
+@media only screen and (min-width: 768px) {
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-areas: 'contact located follow';
+  }
+
+  .contact-us {
+    grid-area: contact;
+    height: 600px;
+  }
+
+  .mail-btn {
+    margin: 0 !important;
+    padding: 15px 50px;
+  }
+
+  .located {
+    grid-area: located;
+    width: 90%;
+    padding: 0 5%;
+  }
+
+  .follow-us {
+    grid-area: follow;
+  }
+
+  .follow-us img {
+    display: block;
+    width: 50%;
+    margin: 40px 25%;
+  }
+}
+
+/*--------Media Querie 768px for About page------*/
+
+@media only screen and (min-width: 768px) {
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'about1 friends'
+      'friends2 about2';
+    font-size: 0.8em;
+  }
+
+  .about-image img {
+    height: 300px;
+    margin: 150px 5% 50px;
+  }
+
+  .about-image2 img {
+    height: 300px;
+    margin: 0 5%;
+  }
+
+  .about-image {
+    grid-area: friends;
+  }
+
+  .about1 {
+    grid-area: about1;
+  }
+
+  .about2 {
+    grid-area: about2;
+  }
+
+  .about-image2 {
+    grid-area: friends2;
+  }
+}
+
+/*----------Media Querie 1100px about page------*/
+
+@media only screen and (min-width: 1100px) {
+  .about-image img {
+    height: 400px;
+    margin: 60px 5% 50px;
+  }
+
+  .about-image2 img {
+    height: 400px;
+    margin: 0 5%;
+  }
+
+  .about-wrapper {
+    font-size: 1em;
+    height: 1000px;
+  }
+}
+
+/*--------Media Querie 768px for tours page------*/
+
+@media only screen and (min-width: 768px) {
+  .route {
+    height: 700px;
+    display: grid;
+    grid-template-rows: 220px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'txt txt'
+      'img map'
+      'btn btn';
+  }
+
+  .route-text {
+    grid-area: txt;
+  }
+
+  .route-image {
+    grid-area: img;
+  }
+
+  .route-map {
+    grid-area: map;
+  }
+
+  .btn-div {
+    grid-area: btn;
+  }
+
+  iframe {
+    height: 300px;
+    margin-top: 40px;
+  }
+
+  .route-image {
+    margin: 0;
+    height: 300px;
+  }
+
+  .route-image img {
+    margin: 40px 5% 0;
+  }
+
+  .route-map {
+    margin: 0;
+    height: 300px;
+  }
+
+  .cta-btn-tours {
+    margin: 20px 35% !important;
+  }
+}
+
+/*----------Media Querie 1100px tours page------*/
+
+@media only screen and (min-width: 1100px) {
+  .cta-btn-tours {
+    margin: 20px 30.5% !important;
+  }
+}
+
+/*----------------------------end of media queries spesificly tours page---------*/
+
+/*-----------------------------------------Media Querie 768px global and home page----------------*/
+@media only screen and (min-width: 768px) {
+  #main-header {
+    height: 500px;
+  }
+
+  #main-header p {
+    top: 400px;
+    font-size: 1.3em;
+  }
+
+  #main-heading {
+    font-size: 2em !important;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .cta-btn {
+    width: 25%;
+    margin: 60px 37.5% 20px;
+  }
+
+  .pic {
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-areas:
+      'header header'
+      'user1 text'
+      'user2 text'
+      'user3 text'
+      'user4 text';
+  }
+  .testimonial-text {
+    grid-area: text;
+    width: 100%;
+  }
+
+  .testimonial-text img {
+    width: 70%;
+  }
+
+  .user1,
+  .user2,
+  .user3,
+  .user4 {
+    margin-left: 80%;
+  }
+
+  #cta-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+  }
+
+  #sign-up {
+    margin: 0;
+    height: 250px;
+  }
+
+  #call-us {
+    height: 250px;
+  }
+}
+
+/*----------------------------------------------------Media Querie 1100px----------------*/
+@media only screen and (min-width: 1100px) {
+  body {
+    padding: 0 10%;
+    background-color: #eaecef;
+  }
+
+  #main-heading {
+    font-size: 2em !important;
+  }
+
+  /*--------Layout homepage-------*/
+  .main-grid {
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'header header'
+      'section1 image1'
+      'image2 section2'
+      'section3 image3'
+      'image4 section4'
+      'test test'
+      'cta cta'
+      'footer footer';
+  }
+
+  #main-nav {
+    width: 80%;
+  }
+
+  #main-header {
+    grid-area: header;
+  }
+
+  .section1 {
+    grid-area: section1;
+  }
+
+  .section2 {
+    grid-area: section2;
+  }
+
+  .section3 {
+    grid-area: section3;
+  }
+
+  .section4 {
+    grid-area: section4;
+  }
+
+  .picture1home {
+    grid-area: image1;
+  }
+
+  .picture2home {
+    grid-area: image2;
+  }
+
+  .picture3home {
+    grid-area: image3;
+  }
+
+  .picture4home {
+    grid-area: image4;
+  }
+
+  .testimonials {
+    grid-area: test;
+  }
+
+  #cta-wrapper {
+    grid-area: cta;
+  }
+
+  #main-footer {
+    grid-area: footer;
+  }
+
+  .sectionhome {
+    background-color: #f9f6ef;
+    height: 600px;
+  }
+
+  .section-exception {
+    background-color: #f9f6ef;
+    height: 600px;
+  }
+
+  .picture3home p {
+    top: 150px;
+    left: 20%;
+    font-size: 2em;
+  }
+
+  .pic {
+    min-height: 600px;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .cta-btn {
+    width: 15%;
+    margin: 60px 12.5% 20px;
+  }
+
+  #main-header {
+    height: 800px;
+  }
+
+  #main-header p {
+    width: 40%;
+    left: 40%;
+    top: 650px;
+    font-size: 2em;
+  }
+
+  #cta-wrapper .fas {
+    margin-left: 20%;
+    font-size: 6em;
+  }
+
+  #cta-wrapper .far {
+    margin-left: 20%;
+    font-size: 6em;
+  }
+
+  #cta-wrapper h3 {
+    padding: 0 0 0 5%;
+    font-size: 3em;
+  }
+
+  #cta-wrapper p {
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+
+  /*---Navigation-----------------*/
+  #main-nav {
+    display: none;
+  }
+
+  #dropdown {
+    height: 0vh;
+    width: 80%;
+    overflow: visible;
+  }
+
+  #dropdown ul {
+    float: left;
+    background-color: black;
+    padding: 1% 0;
+    margin: 0;
+  }
+
+  #dropdown ul li {
+    list-style: none;
+    padding: 0 2%;
+    margin: 0 auto;
+    width: 13%;
+    display: inline-block;
+  }
+
+  #dropdown ul li a {
+    font-size: 0.7em;
+  }
+}

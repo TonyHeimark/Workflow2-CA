@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Re-Cycle | Tours</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <script>
+      function toggleNav(x) {
+        var menu = document.getElementById(x),
+          maxH = '100vh';
+        if (menu.style.height == maxH) {
+          menu.style.height = '0vh';
+        } else {
+          menu.style.height = maxH;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="tour-grid">
+      <div id="dropdown">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <header id="main-header">
+        <nav id="main-nav">
+          <button onclick="toggleNav('dropdown')">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+        <p>
+          <em
+            >Appriciate your surroundings <br />
+            and let them appreciate you.</em
+          >
+        </p>
+      </header>
+
+      <section class="toursinfo">
+        <h1 id="main-heading">Parksville Tours</h1>
+        <p>
+          We offer four different routes around parksville. See info for each of
+          them below. If you have any questions after this, please don't
+          hesitate to call us or send us an email.
+        </p>
+      </section>
+
+      <section class="route1 route">
+        <div class="route-text">
+          <h2>Town Route</h2>
+          <p>
+            The town route is for anyone, this route includes the best places in
+            the town of parksville. And the most common and central parks. As
+            you can see below, the estimated time is 45 minutes. The full ride
+            including sightseeing and picking up trash takes about 1 hour and 15
+            minutes.
+          </p>
+        </div>
+        <div class="route-image">
+          <img src="images/town.jpeg" alt="lorem" />
+        </div>
+        <div class="route-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d20807.064711227566!2d-124.31363593172965!3d49.316497658727734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e1!4m5!1s0x5488855afa6908f3%3A0x50135152a7b1010!2sParksville%2C+Britisk+Columbia%2C+Canada!3m2!1d49.319337499999996!2d-124.3136411!4m3!3m2!1d49.313950299999995!2d-124.35453319999999!4m3!3m2!1d49.328384799999995!2d-124.3447369!4m3!3m2!1d49.320327899999995!2d-124.3323317!4m3!3m2!1d49.3272183!2d-124.30742699999999!4m3!3m2!1d49.3194251!2d-124.31343779999999!5e0!3m2!1sno!2sno!4v1541156522040"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="btn-div">
+          <a href="#" class="cta-btn-tours cta-btn">Book Now</a>
+        </div>
+      </section>
+
+      <section class="route2 route">
+        <div class="route-text">
+          <h2>Forest Route</h2>
+          <p>
+            The forest route takes about 3 hours and you will see the beautiful
+            forests of parksville. Wildlife sights is guaranteed with this
+            route, and you will not be dissapointed. this route is a little bit
+            advanced and bouncy, but don't worry, we know the best routes to
+            take to avoid such terrain.
+          </p>
+        </div>
+        <div class="route-image">
+          <img src="images/forest.jpeg" alt="lorem" />
+        </div>
+        <div class="route-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m36!1m12!1m3!1d41643.042549558326!2d-124.36045874096368!3d49.28226800870515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m21!3e1!4m5!1s0x5488855afa6908f3%3A0x50135152a7b1010!2sParksville%2C+Britisk+Columbia%2C+Canada!3m2!1d49.319337499999996!2d-124.3136411!4m3!3m2!1d49.2821664!2d-124.2910306!4m5!1s0x5488919c64db8daf%3A0x82579b4302c3b1de!2sEnglishman+River+Falls+Provincial+Park!3m2!1d49.2472317!2d-124.3499319!4m3!3m2!1d49.3178686!2d-124.3104669!5e0!3m2!1sno!2sno!4v1541156773654"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="btn-div">
+          <a href="#" class="cta-btn-tours cta-btn">Book Now</a>
+        </div>
+      </section>
+
+      <section class="route3 route">
+        <div class="route-text">
+          <h2>Mountain Route</h2>
+          <p>
+            The mountain route is a bit more advanced and takes about 5 hours
+            and 30 minutes to complete. We do offer car drives to the
+            mountain-foot where you meet up with the rest of the group and go
+            from there. this trip includes some amazing views, high chance of
+            seeing animals and it's a pretty good workout.
+          </p>
+        </div>
+        <div class="route-image">
+          <img src="images/mountain.jpeg" alt="lorem" />
+        </div>
+        <div class="route-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m30!1m12!1m3!1d99772.8055370977!2d-124.46862411582599!3d49.28077578420795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m15!3e1!4m5!1s0x5488855afa6908f3%3A0x50135152a7b1010!2sParksville%2C+Britisk+Columbia%2C+Canada!3m2!1d49.319337499999996!2d-124.3136411!4m3!3m2!1d49.2226206!2d-124.47009109999999!4m3!3m2!1d49.318452699999995!2d-124.310254!5e1!3m2!1sno!2sno!4v1541156941807"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="btn-div">
+          <a href="#" class="cta-btn-tours cta-btn">Book Now</a>
+        </div>
+      </section>
+
+      <section class="route4 route">
+        <div class="route-text">
+          <h2>Nomad Route</h2>
+          <p>
+            The nomad route is for the hardcore bikers out there. this route
+            takes about 8 hours and includes town sightseeing, forest
+            sightseeing, mountain sightseeing and coastline sightseeing. This is
+            the best route for sure, but it is physically challanging and
+            require some conditioning.
+          </p>
+        </div>
+        <div class="route-image">
+          <img src="images/Nomad.png" alt="lorem" />
+        </div>
+        <div class="route-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d49676.05084117534!2d-124.37909563499034!3d49.29972991865532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e1!4m5!1s0x5488855afa6908f3%3A0x50135152a7b1010!2sParksville%2C+Britisk+Columbia%2C+Canada!3m2!1d49.319337499999996!2d-124.3136411!4m3!3m2!1d49.343593899999995!2d-124.50457739999999!4m3!3m2!1d49.220545099999995!2d-124.4683929!4m3!3m2!1d49.2432793!2d-124.35530399999999!4m3!3m2!1d49.2881492!2d-124.29536519999999!4m3!3m2!1d49.3237964!2d-124.273845!4m3!3m2!1d49.3191822!2d-124.31341739999999!5e1!3m2!1sno!2sno!4v1541157066720"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="btn-div">
+          <a href="#" class="cta-btn-tours cta-btn">Book Now</a>
+        </div>
+      </section>
+
+      <div id="cta-wrapper">
+        <a href="#">
+          <div id="sign-up">
+            <i class="far fa-newspaper"></i>
+            <h3><em>Sign Up</em></h3>
+            <br />
+            <br />
+            <p>
+              <em
+                >Sign up for our newsletter to recieve info about our ongoing
+                contests and giveaways</em
+              >
+            </p>
+          </div>
+        </a>
+
+        <a href="#">
+          <div id="call-us">
+            <i class="fas fa-phone"></i>
+            <h3><em>Call Us</em></h3>
+            <p><em>Please call us if you have any questions</em></p>
+            <p><em>Phone: +4736564154713</em></p>
+          </div>
+        </a>
+      </div>
+
+      <footer id="main-footer">
+        <a href="#">To Top</a>
+        <p>
+          Email: Contact@re-cycle.com<br />
+          Phone: +4736564154713
+        </p>
+        <p>&copy;Copyright 2018</p>
+      </footer>
+    </div>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKl-knRUiVShnwFW6Vb6pccOO2X8jJvr8&callback=initMap"
+    ></script>
+  </body>
+</html>
